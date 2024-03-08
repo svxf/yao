@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>yao | error</title>
+    <meta
+      name="description"
+      content="yao!"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="noindex, nofollow, nosnippet" />
+    <base href="/" />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="logo-wrapper left-margin">
+      <h1>yao | error</h1>
+    </div>
+    <div class="desc left-margin">
+      <p>the server could not route your request</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button id="uv-register-sw" value="Register service worker">
+        register service worker
+      </button>
+    </div>
+    <script src="baremux/bare.cjs"></script>
+    <script src="epoxy/index.js"></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="error.js"></script>
+  </body>
+</html>
